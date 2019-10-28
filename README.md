@@ -3,6 +3,8 @@ input data:
 company_feature = [key:cid,feat_1,...,featN]
 location_feature = [key:bid,feat_1,...,featM]
 
+corresponding file link: https://drive.google.com/drive/folders/1eOzqzBmGu0DLxuXrtOJ_F7dGsOQ0x5Ww?usp=sharing
+
 output: score of company and location
 
 file:
