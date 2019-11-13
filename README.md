@@ -57,4 +57,24 @@ file:
 	Each company in testset is invisible to trainset.
 	During the procedure of ensembling, in order to avoid information leak, each company is dropped from his own building when calculating the similarity score.
 
+9. demo/demo_for_company_in_location_out.ipynb
 
+	Demo of recall topk locations for companies with unsupervised score.
+
+10. data_process_for_training_validation/merge_additional_location_into_scorecard.ipynb + get csv for training and testing.ipynb
+
+	Add additional location buildings into original location scorecard.
+	Then doing company-location assignment with linkCompanyAndLocation.ipynb.
+	Split the data for training with get csv for training and testing.ipynb.
+
+11. sub_recommend_reason/sub_recommend_reason_offline.ipynb
+
+	Generate 2 types of recommend reason: location self reason and company-location reason.
+	Location self reason includes: GYM, Eating place, Drinking place ( Above average level of city ). 
+	Company-location reason includes: similar type of company inside the location.
+	Then, merge the reason with company-location score.
+	Only ww location is considered and if the location has no reason, then it will be removed.
+	It is reasonable because it works as recall componet.
+	
+
+	
